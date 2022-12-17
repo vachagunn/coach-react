@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Header from "./components/Header"
+import Search from "./components/Search"
+  
+class App extends React.Component {
+  render() {
+    return(
+      <div className="name">
+        <Header />
+        <Search />
+      </div>
+    )
+  }
+    /* constructor(props) {
+        super(props)
+        this.state = {
+            helpText: "Help Text",
+            userData: ""
+        }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        this.inputClick = this.inputClick.bind(this)
+    }
+
+    helpText = 'what'
+    render() {
+        return (<div className="name">
+            <Header title="Шапка сайта!"/>
+            <h2>{this.state.userData}</h2>
+            <input placeholder={this.state.helpText} 
+                onClick={this.inputClick} 
+                onMouseEnter={this.mouseOver} 
+                onChange={event => this.setState({userData: event.target.value})}/>
+            <p>{this.state.helpText === "what" ? "YES" : "NO"}</p>
+            <img src={chel} />
+        </div>)
+    }
+
+    inputClick() {
+        this.setState({ helpText: "Changed" })
+        console.log('Clicked')
+    }
+    mouseOver() {console.log('MouseOver')} */
 }
 
-export default App;
+export default App
