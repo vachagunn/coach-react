@@ -1,13 +1,21 @@
 import React from "react"
+import Authorization from "./components/Authorization"
 import Header from "./components/Header"
+import Header_Authorization from "./components/Header_Authrization"
+import Registration from "./components/Registration"
 import Search from "./components/Search"
+import './css/authorization.css'
+import './css/registration.css'
   
 class App extends React.Component {
   render() {
     return(
       <div className="name">
-        <Header />
-        <Search />
+        <Header_Authorization />
+        <Registration />
+        {/* <Authorization /> */}
+        {/* <Header />
+        <Search /> */}
       </div>
     )
   }
