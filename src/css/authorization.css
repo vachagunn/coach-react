@@ -1,0 +1,160 @@
+:root {
+    --container-width-ath: 1130px;
+    --container-padding-ath: 45px 160px;
+    --secondary: rgb(15, 31, 28, 0.5);
+    --roboto-slab-font: "Roboto Slab", sans-serif;
+    --oswald-font: "Oswald";
+}
+
+.authorization {
+    font-family: var(--roboto-slab-font);
+
+    width: var(--container-width-ath);
+
+    padding: var(--container-padding-ath);
+    margin: 0 auto;
+
+    border: 2px solid black;
+    border-radius: 5%;
+
+    background-color: white;
+}
+
+.authorization-title {
+    font-weight: 500;
+    font-size: 40px;
+
+    line-height: 53px;
+
+    margin-top: 0;
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+.authorization_roles {
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.student-btn, 
+.coach-btn {
+    font-weight: 700;
+
+    padding: 15px 60px;
+
+    border: none;
+    border-radius: 35px;
+
+    background-color: #d9d9d9;
+}
+
+.active {
+    color: white;
+    background-color: #74c044;
+}
+
+.authorization_sign-in {
+    display: flex;
+    flex-direction: column;
+}
+
+.login,
+.password {
+    margin-top: 0;
+    padding: 13px 25px;
+
+    border: 1px solid black;
+    border-radius: 20px;
+
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.login,
+.password:focus {
+    color: black;
+}
+
+.login {
+    margin-bottom: 45px;
+}
+
+.password {
+    margin-bottom: 15px;
+}
+
+.additional_options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 0;
+}
+
+.remember_block {
+    margin-left: 5px;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    vertical-align: middle;
+}
+
+.checkbox-text {
+    margin-left: 10px;
+
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 100;
+}
+
+.forgot_password {
+    font-size: 24px;
+    line-height: 34px;
+
+    margin-top: 0;
+    margin-bottom: 35px;
+    margin-left: auto;
+
+    text-decoration: none;
+    color: #74c044;
+}
+
+.forgot_password:hover {
+    opacity: 0.5;
+}
+
+.sign-in_button {
+    margin-top: 0;
+    margin-bottom: 45px;
+
+    padding: 10px;
+
+    font-weight: 700;
+
+    background-color: #74c044;
+    color: white;
+
+    border: none;
+    border-radius: 35px;
+}
+
+.registration {
+    margin-top: 0;
+    margin-bottom: 45px;
+
+    text-align: center;
+    text-decoration: none;
+    
+    color: #74c044;
+}
+
+.registration:hover {
+    opacity: 0.5;
+}
