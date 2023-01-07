@@ -1,21 +1,31 @@
 import React from "react"
+import Activities from "./components/Activities"
 import Authorization from "./components/Authorization"
 import Header from "./components/Header"
 import Header_Authorization from "./components/Header_Authrization"
 import Registration from "./components/Registration"
 import Search from "./components/Search"
+import Categories from "./components/Categories"
+import Recommendations from "./components/Recommendations"
+import Footer from "./components/Footer"
+import Arrow from "./components/Arrow"
 import './css/authorization.css'
 import './css/registration.css'
+import './css/activities.css'
   
 class App extends React.Component {
   render() {
     return(
       <div className="name">
         <Header_Authorization />
-        <Registration />
+        <Search />
+        <Categories />
+        <Recommendations />
+        <Footer />
+        <Arrow />
+        {/* <Activities /> */}
+        {/* <Registration /> */}
         {/* <Authorization /> */}
-        {/* <Header />
-        <Search /> */}
       </div>
     )
   }

@@ -31,19 +31,6 @@ class Registration extends React.Component {
                 </label>
             </div>
             <button className="next-btn btn" type="submit">Далее</button>
-            {/* <div className="authorization_sign-in">
-                <input className="login" type="text" aria-label="Ввод телефона или логина" placeholder="Телефон или почта" required/>
-                <input className="password" type="password" aria-label="Ввод пароля" placeholder="Пароль" required/>
-                <div className="additional_options">
-                    <label className="remember_block">
-                        <input className="checkbox" type="checkbox" />  
-                        <span className="checkbox-text">Запомнить меня</span>
-                    </label>
-                    <a href="#" className="forgot_password">Забыли пароль?</a>
-                </div>
-                <button className="sign-in_button" type="submit">Войти</button>
-                <a href="#" className="registration">Зарегистрироваться</a>
-            </div> */}
         </form>
       )
     }
