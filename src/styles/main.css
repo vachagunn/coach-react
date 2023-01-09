@@ -28,90 +28,10 @@ a {
     color: inherit;
 }
 
-.page-header {
-    max-width: var(--container-width);
-    padding: var(--container-padding);
-    margin: 0 auto;
-    margin-bottom: 60px;
-    border-bottom: 3px solid black;
-}
-
-.main-header-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    column-gap: 20px;
-    align-items: center;
-}
-
-.logo {
-    font-family: var(--oswald-font);
-    font-size: 46px;
-}
-
-.select {
-    display: block;
-    width: 100%;
-
-    font-family: var(--roboto-slab-font);
-    font-weight: 300;
-
-    /* Убираем браузерную стрелку */
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-
-    /* Убираем рамки и линии */
-    border: none;
-    background-color: transparent;
-    outline: none;
-
-    /* Задаем свои параметры */
-    /* border: 1px solid #0F1F1C;
-    border-radius: 6px;
-    background-color: #fff; */
-    padding: 10px 35px 10px 15px;
-    cursor: pointer;
-}
-
-.select::-ms-expand {
-    /* Убираем браузерную стреку для браузера
-    Internet Explorer */
-    display: none;
-}
-
-.select-wrapper {
-    position: relative;
-    right: 15px;
-}
-
-.select-wrapper::before {
-    /* content: url(/coach/image/arrow-bottom.svg); */
-
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-
-    display: block;
-    
-    /* Снимаем клик */
-    pointer-events: none;
-}
-
-.select option {
-    font-weight: 300;
-}
-
-.sign-in_link {
-    font-family: var(--roboto-slab-font);
-    font-weight: 300;
-    text-decoration: none;
-}
-
-.main {
+main {
     margin: 0;
     padding: 0;
+    
 }
 
 /* Поиск */

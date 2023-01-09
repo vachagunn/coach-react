@@ -1,0 +1,37 @@
+.description-block {
+    width: 1132px;
+
+    /* display: grid;
+    grid-template-columns: repeat(383px, 1fr); */
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 auto;
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 2px solid black;
+    border-radius: 60px;
+}
+
+.description-block-left-column {
+    width: 383px;
+}
+
+.description-block-left-column img {
+    margin-top: 0;
+    margin-bottom: 75px;
+}
+
+.block-left-option-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: #74C044;
+}
+
+.block-left-option-value {
+    margin-top: 0;
+    margin-bottom: 63px;
+}

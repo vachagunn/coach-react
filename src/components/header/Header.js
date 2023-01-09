@@ -1,9 +1,7 @@
-import React from "react"
-import Button from "./Button"
+import "./style.css"
 
-class Header extends React.Component {
-    render() {
-      return (
+const Header = () => {
+    return (
         <header className="page-header">
             <nav className="main-header-nav">
                 <a href="#" className="logo-link">
@@ -11,17 +9,14 @@ class Header extends React.Component {
                 </a>
                 <div className="select-wrapper">
                     <select name="select-category" className="select" id="">
-                        <option value={1}>Екатеринбург</option>
-                        <option value={2}>Челябинск</option>
-                        <option value={3}>Тюмень</option>
-                    </select> 
+                        <option value="1">Екатеринбург</option>
+                        <option value="2">Челябинск</option>
+                        <option value="3">Тюмень</option>
+                    </select>
                 </div>
                 <a href="#" className="sign-in_link">Войти</a>
             </nav>
-            <Button />
-        </header>
-      )
-    }
+        </header>);
 }
-
-export default Header
+ 
+export default Header;
