@@ -1,0 +1,47 @@
+/* Поиск */
+
+.search-block {
+    max-width: var(--container-width);
+    padding: 0px var(--container-padding);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    margin-bottom: 70px;
+}
+
+.search-input {
+    max-width: 1000px;
+    width: 100%;
+    height: 70px;
+
+    padding: 30px;
+
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+
+    height: 70px;
+    padding: 30px 70px;
+    
+    border: none;
+    border-radius: 20px;
+    background: #74C044;
+    color: #fff;
+}
+
+.btn:hover {
+    color: #0F1F1C;
+    transition: color 0.2s ease-in;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}

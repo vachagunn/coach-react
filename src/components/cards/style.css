@@ -1,0 +1,121 @@
+/* Рекомендации */
+
+.recommendations-block {
+    margin: 0;
+
+    max-width: var(--container-width);
+    margin: 0 auto;
+
+    padding-left: 0;
+    margin-bottom: 60px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.card {
+    display: flex;
+    gap: 70px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 60px;
+}
+
+.photo-block {
+    width: 200px;
+    text-align: center;
+}
+
+.photo-block img {
+    display: block;
+    border-radius: 50px;
+    margin-bottom: 35px;
+}
+
+.photo-block p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.photo-block a {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: #2E7800;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.information-block {
+    margin: 0;
+    padding: 0;
+    width: 950px;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.information-block-activity {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.information-block-experience {
+    margin-top: 0;
+}
+
+.information-block-description {
+    margin-top: 0;
+    margin: 30px 0;
+
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.information-block-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 60px;
+    margin-right: 30px;
+}
+
+.information-block-buttons a {
+    position: relative;
+    text-decoration: none;
+}
+
+.information-block-buttons a:hover::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 10px;
+    bottom: -6px;
+
+    height: 4px;
+    background-color: #C4C4C4;
+    border-radius: 50px;
+}
+
+.information-block-more {
+    color: #0F1F1C;;
+}
+
+.information-block-enroll {
+    color: #2E7800;
+}
