@@ -26,7 +26,7 @@
     width: 100%;
 
     font-family: var(--roboto-slab-font);
-    font-weight: 300;
+    font-weight: 400;
 
     /* Убираем браузерную стрелку */
     appearance: none;
@@ -42,7 +42,7 @@
     /* border: 1px solid #0F1F1C;
     border-radius: 6px;
     background-color: #fff; */
-    padding: 10px 35px 10px 15px;
+    /* padding: 10px 35px 10px 15px; */
     cursor: pointer;
 }
 
@@ -79,4 +79,25 @@
     font-family: var(--roboto-slab-font);
     font-weight: 300;
     text-decoration: none;
+}
+
+/* Авторизованный (профиль) */
+.profile {
+    font-family: var(--roboto-slab-font);
+    display: flex;
+    gap: 9px;
+}
+
+.profile img {
+    display: block;
+    border: 2px solid black;
+    border-radius: 25%;
+}
+
+.profile__name {
+    font-weight: 400;
+}
+
+.hidden {
+    display: none;
 }

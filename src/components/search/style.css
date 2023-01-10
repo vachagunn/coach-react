@@ -1,6 +1,7 @@
 /* Поиск */
 
 .search-block {
+    font-family: var(--roboto-slab-font);
     max-width: var(--container-width);
     padding: 0px var(--container-padding);
     margin: 0 auto;

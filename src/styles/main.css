@@ -33,7 +33,15 @@ main {
     padding: 0;   
 }
 
+h2 {
+    font-family: var(--roboto-slab-font);
+    font-size: 40px;
+    line-height: 36px;
+    font-weight: 400;
 
+    margin-top: 0;
+    margin-bottom: 25px;
+}
 
 .up-button {
     position: fixed;
