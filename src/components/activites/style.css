@@ -4,6 +4,18 @@
 
 /* Увлечения */
 
+.activities-block {
+    font-family: var(--roboto-slab-font);
+    max-width: var(--container-width);
+    padding: 0px var(--container-padding);
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.block-title {
+    color: black;
+}
+
 .activities {
     display: flex;
     flex-wrap: wrap;
@@ -23,9 +35,16 @@
     border-radius: 15px;
 }
 
+.show__more {
+    text-decoration: underline !important;
+    color: #2E7800;
+}
+
 .control_buttons {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 25px;
 }
 
 .back-btn {

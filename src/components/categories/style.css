@@ -3,7 +3,7 @@
 .categories-block {
     max-width: var(--container-width);
     margin: 0 auto;
-
+    overflow-x: auto;
     margin-bottom: 120px;
 }
 
@@ -28,7 +28,6 @@
 }
 
 .categories-list-item img {
-
     display: block;
     border-radius: 20px;
 }
