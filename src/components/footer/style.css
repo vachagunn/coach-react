@@ -22,7 +22,12 @@
 }
 
 .links-list-item {
+    font-weight: 300;
     margin-bottom: 14px;
+}
+
+.links-list-item:hover {
+    text-decoration: underline;
 }
 
 .links-list-item:last-child {

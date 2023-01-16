@@ -30,19 +30,17 @@ class App extends React.Component {
       <div className="App">
         {/* Компоненты */}
 
-        {/* <Header_Authorization /> */}
         {/* <Users /> */}
         {/* <Recommendations /> */}
         {/* <Description /> */}
         {/* <Arrow /> */}
-        {/* <Activities /> */}
         {/* <Registration /> */}
         {/* <Authorization /> */}
 
         {/* Страницы */}
 
-        {/* <Home /> */}
-        <CategoriesList />
+        <Home />
+        {/* <CategoriesList /> */}
 
         <Footer />
         {/* <button className="up-button" type="button">

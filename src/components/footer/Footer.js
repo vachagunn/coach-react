@@ -13,9 +13,6 @@ const Footer = () => {
                         <li className="links-list-item">
                             <a href="#">Мобильная версия</a>
                         </li>
-                        <li className="links-list-item">
-                            <a href="#">Рекламодателям</a>
-                        </li>
                     </ul>
                 </div>
                 <div className="contacts">

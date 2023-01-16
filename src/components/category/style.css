@@ -1,0 +1,24 @@
+/* Категория */
+
+.categories-list-item a {
+    position: relative;
+    text-decoration: none;
+}
+
+.categories-list-item img {
+    display: block;
+    border-radius: 20px;
+}
+
+.categories-list-item p {
+    font-family: var(--roboto-slab-font);
+
+    position: absolute;
+    top: 75%;
+    left: 5%;
+
+    font-size: 24px;
+    margin: 0;
+
+    color: #fff;
+}
