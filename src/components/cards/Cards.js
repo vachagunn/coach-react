@@ -13,8 +13,9 @@ const Cards = () => {
         <section className="recommendations-block">
             <h2 className="recommendaions-block-title" id='t2'>Рекомендуем</h2>
             <ul className="cards">
-                {cards.map((card) => {
-                    return <Card 
+                {cards.map((card, index) => {
+                    return <Card
+                        key={index}
                         id={card.id}
                         name={card.name} 
                         activity={card.activity}
