@@ -1,14 +1,15 @@
 import "./style.css"
 
 import profile_avatar from './../../img/profile.svg'
+import { NavLink } from "react-router-dom";
 
 const Header_Authorized = () => {
     return (
         <header className="page-header">
             <nav className="main-header-nav">
-                <a href="#" className="logo-link">
+                <NavLink to='/' className="logo-link">
                     <h1 className="logo">Coach</h1>
-                </a>
+                </NavLink>
                 <div className="select-wrapper">
                     <select name="select-category" className="select" id="">
                         <option value="1">Екатеринбург</option>

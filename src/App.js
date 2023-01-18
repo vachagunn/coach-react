@@ -1,4 +1,5 @@
 import React from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 /* Компоненты */
 import Header from "./components/header/Header"
@@ -8,11 +9,14 @@ import Authorization from "./components/Authorization"
 import Registration from "./components/Registration"
 import Arrow from "./components/Arrow"
 import Description from "./components/Description"
-import Users from "./components/Users"
 import Footer from "./components/footer/Footer"
 
 /* Страницы */
 import Home from "./pages/Home"
+import CategoriesList from "./pages/CategoriesList";
+
+/* Утилиты */
+import ScrollToTop from "./utils/scrollToTop";
 
 /* Дополнительные стили */
 import './styles/authorization.css'
@@ -21,34 +25,39 @@ import './styles/description.css'
 
 /* Основные стили */
 import './styles/main.css'
-import Activities from "./components/activites/Activities"
-import CategoriesList from "./pages/CategoriesList"
   
 class App extends React.Component {
   render() {
     return(
       <div className="App">
-        {/* Компоненты */}
+        <Router>
+          <ScrollToTop />
+          {/* Компоненты */}
 
-        {/* <Users /> */}
-        {/* <Recommendations /> */}
-        {/* <Description /> */}
-        {/* <Arrow /> */}
-        {/* <Registration /> */}
-        {/* <Authorization /> */}
+          {/* <Description /> */}
+          {/* <Arrow /> */}
+          {/* <Registration /> */}
+          {/* <Authorization /> */}
 
-        {/* Страницы */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/authorization" element={<Authorization />} />
+            <Route path="/categories_list/:id" element={<CategoriesList />} />
+          </Routes>
 
-        <Home />
-        {/* <CategoriesList /> */}
+          {/* Страницы */}
 
-        <Footer />
-        {/* <button className="up-button" type="button">
-            ↑
-            <span className="visually-hiden">Наверх</span>
-        </button>
-        <script src="/js/index.js" type="text/babel"></script> 
-        <script src='/js/up-button.js'></script> */}
+          {/* <Home /> */}
+          {/* <CategoriesList /> */}
+
+          <Footer />
+          {/* <button className="up-button" type="button">
+              ↑
+              <span className="visually-hiden">Наверх</span>
+          </button>
+          <script src="/js/index.js" type="text/babel"></script> 
+          <script src='/js/up-button.js'></script> */}
+        </Router>
       </div>
     )
   }

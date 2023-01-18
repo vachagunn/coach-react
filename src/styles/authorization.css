@@ -52,10 +52,10 @@
     background-color: #d9d9d9;
 }
 
-.active {
+/* .active {
     color: white;
     background-color: #74c044;
-}
+} */
 
 .authorization_sign-in {
     display: flex;

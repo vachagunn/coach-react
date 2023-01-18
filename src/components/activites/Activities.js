@@ -1,22 +1,35 @@
-import './style.css'
+import { useParams } from "react-router-dom";
+
+// import Activity from '../activity/Activity';
+
+// import { activities } from '../../helpers/activitiesList';
+import { categories } from "../../helpers/categoriesList";
+
+import './style.css';
+
 
 const Activities = () => {
+    // Для поиска кнопок
+    // const [ActivityList, setActivityList] = useState(data);
+    const {id} = useParams();
+    const category = categories[id];
+
     return ( 
         <>
             <div className="activities-block">
-                <h2 className="block-title">Спорт</h2>
+                <p>Страница номер: {id}</p>
+                <h2 className="block-title">{category.title}</h2>
                 <ul className="activities">
-                    <li><a href="#" className="btn">Футбол</a></li>
-                    <li><a href="#" className="btn">Баскетбол</a></li>
-                    <li><a href="#" className="btn">Хоккей</a></li>
-                    <li><a href="#" className="btn">Теннис</a></li>
-                    <li><a href="#" className="btn">Бокс</a></li>
-                    <li><a href="#" className="btn">Плавание</a></li>
-                    <li><a href="#" className="btn">Биатлон</a></li>
-                    <li><a href="#" className="btn">Гимнастика</a></li>
-                    <li><a href="#" className="btn">Автоспорт</a></li>
-                    <li><a href="#" className="btn">Волейбол</a></li>
-                    <li><a href="#" className="btn">Бег</a></li>
+                    {category.items.map((item) => {
+                        return <li className="btn">{item}</li>
+                    })}
+                    {/* Вывод кнопок через компоненту Activity */}
+                    {/* {activities.map((activity) => {
+                        return <Activity
+                            title={activity.title} 
+                            item={activity.item} 
+                        />
+                    })} */}
                 </ul>
                 <a href='#' className='show__more'>Показать все категории</a>
                 {/* <div className="control_buttons">

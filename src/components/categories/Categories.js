@@ -4,7 +4,6 @@ import Category from '../category/Category';
 
 import { categories } from '../../helpers/categoriesList';
 
-
 const Categories = () => {
     return ( 
         <section className="categories-block">
@@ -14,6 +13,7 @@ const Categories = () => {
                     return <Category
                         title={category.title}
                         image={category.image}
+                        items={category.items}
                     />;
                 })}
             </ul>
