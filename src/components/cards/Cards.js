@@ -11,7 +11,7 @@ import {cards} from './../../helpers/cardsList'
 const Cards = () => {
     return ( 
         <section className="recommendations-block">
-            <h2 className="recommendaions-block-title">Рекомендуем</h2>
+            <h2 className="recommendaions-block-title" id='t2'>Рекомендуем</h2>
             <ul className="cards">
                 {cards.map((card) => {
                     return <Card 
@@ -19,6 +19,7 @@ const Cards = () => {
                         name={card.name} 
                         activity={card.activity}
                         experience={card.experience}
+                        city={card.city}
                         description={card.description}
                         image={card.image}
                         rating={card.rating}

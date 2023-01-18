@@ -66,13 +66,13 @@
     transform: translateY(-50%);
 
     display: block;
-    
+
     /* Снимаем клик */
     pointer-events: none;
 }
 
 .select option {
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -99,6 +99,10 @@
     font-weight: 400;
 }
 
-.hidden {
-    display: none;
+.profile__name option {
+    text-align: start;
+}
+
+.profile__name option:hover {
+    text-align: center;
 }

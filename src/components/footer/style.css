@@ -22,7 +22,7 @@
 }
 
 .links-list-item {
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 14px;
 }
 
@@ -35,9 +35,21 @@
 }
 
 .contacts {
-    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 5px;
 }
 
-.contacts a p{
+.contacts p{
+    font-weight: 300;
     text-align: end;
+}
+
+.contacts p .accent {
+    font-weight: 400;
+}
+
+.contacts p:first-child {
+    margin-bottom: 10px;
 }

@@ -11,7 +11,10 @@ const Footer = () => {
                     </NavLink>
                     <ul className="links-list">
                         <li className="links-list-item">
-                            <a href="#">Категории</a>
+                            <a href="#t1">Категории</a>
+                        </li>
+                        <li className="links-list-item">
+                            <a href="#t2">Тренера</a>
                         </li>
                         <li className="links-list-item">
                             <a href="#">Мобильная версия</a>
@@ -19,12 +22,8 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="contacts">
-                    <p className="support">Служба поддержки:</p>
-                    <a href="#">
-                        <p className="tel">8 (953) 123-45-67</p>
-                    </a>
-                    <p className='version'>Версия: 1.0.0</p>
-                    <p className='version'>Дата обновления: 18.01.2023</p>
+                    <p>Дата обновления: <span className="accent">18.01.2023</span></p>
+                    <p>Версия: <span className="accent">1.0.0</span></p>
                 </div>
             </div>
         </footer>

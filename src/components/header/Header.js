@@ -12,12 +12,12 @@ const Header = () => {
                     <h1 className="logo">Coach</h1>
                 </NavLink>
                 <div className="select-wrapper">
-                <select name="select-city" className="select" onClick={sortCities}>
-                        <option value="1" selected>Екатеринбург</option>
-                        <option value="2">Тюмень</option>
-                        <option value="3">Челябинск</option>
-                        <option value="4">Первоуральск</option>
-                        <option value="5">Нижний Тагил</option>
+                    <select name="select-city" className="select" onClick={sortCities}>
+                        <option value={1} selected>Екатеринбург</option>
+                        <option value={2}>Тюмень</option>
+                        <option value={3}>Челябинск</option>
+                        <option value={4}>Первоуральск</option>
+                        <option value={5}>Нижний Тагил</option>
                     </select>
                 </div>
                 <a href="#" className="sign-in_link">Войти</a>

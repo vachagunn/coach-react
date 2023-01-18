@@ -12,7 +12,8 @@ const Card = (props) => {
                 <div className="information-block">
                     <h3 className="information-block-name">{props.name}</h3>
                     <p className="information-block-activity">{props.activity}</p>
-                    <p className="information-block-experience">Стаж {props.experience} лет</p>
+                    <p className="information-block-experience">Опыт {props.experience} лет</p>
+                    <p className="informaion-block-city">{props.city}</p>
                     <p className="information-block-description">{props.description}</p>
                 </div>
             </div>
