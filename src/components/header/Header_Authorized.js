@@ -2,6 +2,7 @@ import "./style.css"
 
 import profile_avatar from './../../img/profile.svg'
 import { NavLink } from "react-router-dom";
+import { sortCities } from "../../scripts/sortCities";
 
 const Header_Authorized = () => {
     return (
@@ -11,10 +12,12 @@ const Header_Authorized = () => {
                     <h1 className="logo">Coach</h1>
                 </NavLink>
                 <div className="select-wrapper">
-                    <select name="select-category" className="select" id="">
-                        <option value="1">Екатеринбург</option>
-                        <option value="2">Челябинск</option>
-                        <option value="3">Тюмень</option>
+                    <select name="select-city" className="select" onClick={sortCities}>
+                        <option value="1" selected>Екатеринбург</option>
+                        <option value="2">Тюмень</option>
+                        <option value="3">Челябинск</option>
+                        <option value="4">Первоуральск</option>
+                        <option value="5">Нижний Тагил</option>
                     </select>
                 </div>
                 <div href="#" className="profile">
