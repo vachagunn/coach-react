@@ -1,9 +1,9 @@
-import React from "react";
-// import changeRole from "../scripts/change_role";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import './style.css'
 
-class Authorization extends React.Component {
-    render() {
-      return (
+const Authorization = () => {
+    return (
         <form className="authorization">
             <h1 className="authorization-title">Вход</h1>
             <div className="authorization_roles">
@@ -21,11 +21,10 @@ class Authorization extends React.Component {
                     <a href="#" className="forgot_password">Забыли пароль?</a>
                 </div>
                 <button className="sign-in_button" type="submit">Войти</button>
-                <a href="#" className="registration">Зарегистрироваться</a>
+                <NavLink to="/registration" className="registration">Зарегистрироваться</NavLink>
             </div>
         </form>
-      )
-    }
+     );
 }
-
-export default Authorization
+ 
+export default Authorization;

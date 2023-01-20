@@ -7,7 +7,6 @@ import { categories } from "../../helpers/categoriesList";
 
 import './style.css';
 
-
 const Activities = () => {
     // Для поиска кнопок
     // const [ActivityList, setActivityList] = useState(data);
@@ -17,7 +16,6 @@ const Activities = () => {
     return ( 
         <>
             <div className="activities-block">
-                <p>Страница номер: {id}</p>
                 <h2 className="block-title">{category.title}</h2>
                 <ul className="activities">
                     {category.items.map((item) => {

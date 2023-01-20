@@ -77,3 +77,31 @@
     background: #74C044;
     color: #fff;
 }
+
+.register_btn {
+    margin-top: 0;
+    margin-bottom: 45px;
+
+    padding: 10px;
+
+    font-weight: 700;
+
+    background-color: #74c044;
+    color: white;
+
+    border: none;
+    border-radius: 35px;
+}
+
+.register_btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.password {
+    margin-bottom: 0;
+}
+
+.authorization_sign-in button {
+    margin-top: 45px;
+}

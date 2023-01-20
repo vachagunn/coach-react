@@ -1,0 +1,44 @@
+/* Стрелка возвращающая в начала страницы */
+
+.up-button {
+    position: fixed;
+    z-index: 1;
+
+    padding: 0;
+
+    bottom: 75px;
+    right: 50px;
+
+    width: 64px;
+    height: 64px;
+
+    font-size: 36px;
+    font-weight: bold;
+
+    text-align: center;
+    vertical-align: middle;
+
+    border: 5px solid;
+    border-radius: 50%;
+
+    display: none;
+    cursor: pointer;
+
+    color: #0F1F1C;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color:#74C044;
+    /* outline-color: #0F1F1C; */
+}
+
+.up-button:hover {
+    border-color: #2E7800;
+}
+
+.shown {
+    display: inline-block;
+}
+
+.visually-hidden {
+    display: none;
+    font-size: 24px;
+}
