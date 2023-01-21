@@ -105,3 +105,8 @@
 .authorization_sign-in button {
     margin-top: 45px;
 }
+
+.authorization_sign-in button:active {
+    position: relative;
+    top: 1px;
+}

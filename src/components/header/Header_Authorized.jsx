@@ -1,6 +1,5 @@
 import "./style.css"
 
-import profile_avatar from './../../img/profile.svg'
 import { NavLink } from "react-router-dom";
 import { sortCities } from "../../scripts/sortCities";
 

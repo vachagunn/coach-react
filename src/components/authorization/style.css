@@ -54,10 +54,17 @@
     background-color: #d9d9d9;
 }
 
-/* .active {
+.student-btn:active, 
+.coach-btn:active {
+    position: relative;
+    top: 1px;
+    /* background-color: #74c044; */
+}
+
+.change_color {
     color: white;
     background-color: #74c044;
-} */
+}
 
 .authorization_sign-in {
     display: flex;
@@ -93,7 +100,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    margin-top: 0;
+    margin-top: 20px;
 }
 
 .remember_block {

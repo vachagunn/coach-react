@@ -41,6 +41,8 @@
 .show__more {
     text-decoration: underline !important;
     color: #2E7800;
+    margin-bottom: 20px;
+    display: block;
 }
 
 .control_buttons {
@@ -61,4 +63,10 @@
     border-radius: 20px;
     background: #D9D9D9;
     color: black;
+}
+
+.card {
+    list-style: none;
+    margin-bottom: 25px;
+    font-family: 'Roboto';
 }
