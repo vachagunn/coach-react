@@ -1,0 +1,133 @@
+/* Модальное окно */
+
+.description-block {
+    /* width: 1132px; */
+    width: 100vw;
+    height: 100vh;
+    /* display: grid;
+    grid-template-columns: repeat(383px, 1fr); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    /* padding: 20px; */
+
+    /* background: #ffffff; */
+    background-color: rgba(0, 0, 0, 0.4);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* border: 2px solid black;
+    border-radius: 60px; */
+    /* transform: scale(0); */
+    transition: 0.5s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.description-block.active {
+    opacity: 1;
+    pointer-events: all;
+    /* transform: scale(1); */
+}
+
+.description-content {
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    width: 40vw;
+    transform: scale(0.5);
+    transition: 0.4s all;
+    display: flex;
+}
+
+.description-content.active {
+    transform: scale(1);
+}
+
+.description-block-left-column {
+    width: 200px;
+}
+
+.description-block-left-column img {
+    margin-top: 0;
+    margin-bottom: 50px;
+    border-radius: 25%;
+}
+
+.block-left-option {
+    /* margin-left: 5px; */
+    text-align: center;
+}
+
+.block-left-option.title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.title {
+    color: #74C044;
+}
+
+.block-left-option.value {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.description-block-right-column {
+    margin-left: 50px;
+}
+
+.block-right-option.value {
+    margin-bottom: 20px;
+}
+
+.experience_and_rating {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.date {
+    font-size: 22px;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-align: center;
+    width: 200px;
+    padding: 2px 20px;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.calendar-item {
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25%;
+    padding: 5px;
+    text-align: center;
+}
+
+.day__word,
+.day__number {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+
+.calendar-item.active {
+    background-color: #74C044;
+}

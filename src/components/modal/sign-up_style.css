@@ -1,0 +1,69 @@
+/* Запись */
+
+.description-content.sign-up {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.modale-sign-up__header {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    /* flex-wrap: wrap; */
+    padding: 5px;
+    margin: 0;
+}
+
+.modale_sign-up__title {
+    margin-bottom: 0;
+}
+
+.modale-sign-up__rating {
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.modale-sign-up__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 0;
+}
+
+.modale-sign__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.modale-sign__block:first-child {
+    /* border-bottom: 2px solid black; */
+}
+
+.modale-sign__block-data {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.data-title {
+    font-size: 22px;
+    color: #74C044;
+}
+
+.data-value {
+    font-size: 30px;
+}
+
+.modale-sign__block__place {
+    margin: 0;
+    padding: 20px;
+}

@@ -1,4 +1,7 @@
 .authorization {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 45px 60px;
 }
 

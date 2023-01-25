@@ -18,6 +18,7 @@ const Home = () => {
                 <Cards />
             </main>
 
+            <Arrow />
             <Footer />
         </>
      );

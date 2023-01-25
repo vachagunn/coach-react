@@ -10,6 +10,8 @@ const Registration = () => {
     const [emailError, setEmailError] = useState('Логин пустой')
     const [passwordError, setPasswordError] = useState('Пароль пустой')
     const [formValid, setFormValid] = useState(false)
+    const [isActive, setActive] = useState(false)
+    
 
     useEffect(() => {
         if (emailError || passwordError) {
@@ -52,12 +54,16 @@ const Registration = () => {
         }
     }
     
+    const ToggleHandler = () => {
+        setActive(!isActive)
+    }
+
     return ( 
         <form className="authorization">
             <h1 className="authorization-title">Регистрация</h1>
             <div className="authorization_roles">
-                <button className="student-btn active" type="button">Я ученик</button>
-                <button className="coach-btn" type="button">Я тренер</button>
+                <button className={`student-btn ${!isActive ? 'change_color' : ''}`} type="button" onClick={ToggleHandler}>Я ученик</button>
+                <button className={`coach-btn ${isActive ? 'change_color' : ''}`} type="button" onClick={ToggleHandler}>Я тренер</button>
             </div>
             <div className="authorization_sign-in">
                 {(emailDirty && emailError) && <div style={{color: "red", marginBottom: "10px"}}>{emailError}</div>}

@@ -2,10 +2,6 @@ import './style.css'
 
 import Card from '../card/Card';
 
-import avatarCard1 from './../../img/cards/card-avatar-1.png'
-import avatarCard2 from './../../img/cards/card-avatar-2.png'
-import avatarCard3 from './../../img/cards/card-avatar-3.png'
-
 import {cards} from './../../helpers/cardsList'
 
 const Cards = () => {

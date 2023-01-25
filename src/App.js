@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header"
 import Search from "./components/search/Search"
 import Cards from "./components/cards/Cards"
-import Description from "./components/Description"
 import Footer from "./components/footer/Footer"
 
 /* Страницы */
@@ -17,9 +16,6 @@ import CategoriesList from "./pages/CategoriesList";
 /* Утилиты */
 import ScrollToTop from "./utils/scrollToTop";
 
-/* Дополнительные стили */
-import './styles/description.css'
-
 /* Основные стили */
 import './styles/main.css'
   
@@ -29,9 +25,6 @@ class App extends React.Component {
       <div className="App">
         <Router>
           <ScrollToTop />
-          {/* Компоненты */}
-
-          {/* <Description /> */}
 
           {/* Ссылки на страницы */}
           <Routes>
