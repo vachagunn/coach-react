@@ -20,7 +20,7 @@ const Header = () => {
                         <option value={5}>Нижний Тагил</option>
                     </select>
                 </div>
-                <a href="#" className="sign-in_link">Войти</a>
+                <NavLink to="/authorization" className="sign-in_link">Войти</NavLink>
             </nav>
         </header>);
 }

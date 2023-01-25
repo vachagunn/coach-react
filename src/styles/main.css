@@ -14,6 +14,7 @@ html {
 }
 
 body {
+    height: 100%;
     margin: 0;
 
     font-family: 'Roboto', sans-serif;
@@ -24,13 +25,24 @@ body {
     color: #0F1F1C;
 }
 
+#app {
+    min-height: 100%;
+}
+
+.App {
+    /* display: flex;
+    flex-direction: column; */
+    min-height: 100%;
+}
+
 a {
     color: inherit;
 }
 
 main {
     margin: 0;
-    padding: 0;   
+    padding: 0;
+    flex: 1 1 auto;   
 }
 
 h2 {
@@ -41,47 +53,4 @@ h2 {
 
     margin-top: 0;
     margin-bottom: 25px;
-}
-
-.up-button {
-    position: fixed;
-    z-index: 1;
-
-    padding: 0;
-
-    bottom: 75px;
-    right: 50px;
-
-    width: 64px;
-    height: 64px;
-
-    font-size: 36px;
-    font-weight: bold;
-
-    text-align: center;
-    vertical-align: middle;
-
-    border: 5px solid;
-    border-radius: 50%;
-
-    display: none;
-    cursor: pointer;
-
-    color: #0F1F1C;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-color:#74C044;
-    /* outline-color: #0F1F1C; */
-}
-
-.up-button:hover {
-    border-color: #2E7800;
-}
-
-.shown {
-    display: inline-block;
-}
-
-.visually-hiden {
-    display: none;
-    font-size: 24px;
 }

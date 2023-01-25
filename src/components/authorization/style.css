@@ -1,3 +1,5 @@
+/* Авторизация */
+
 :root {
     --container-width-ath: 1130px;
     --container-padding-ath: 45px 160px;
@@ -9,7 +11,7 @@
 .authorization {
     font-family: var(--roboto-slab-font);
 
-    width: var(--container-width-ath);
+    max-width: var(--container-width-ath);
 
     padding: var(--container-padding-ath);
     margin: 0 auto;
@@ -35,6 +37,8 @@
 .authorization_roles {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
     
     margin-top: 0;
     margin-bottom: 50px;
@@ -52,14 +56,22 @@
     background-color: #d9d9d9;
 }
 
-/* .active {
-    color: white;
+/* .student-btn:active, 
+.coach-btn:active {
+    position: relative;
+    top: 1px;
     background-color: #74c044;
 } */
+
+.change_color {
+    color: white;
+    background-color: #74c044;
+}
 
 .authorization_sign-in {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .login,
@@ -91,7 +103,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    margin-top: 0;
+    margin-top: 20px;
 }
 
 .remember_block {

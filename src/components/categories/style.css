@@ -4,14 +4,17 @@
     max-width: var(--container-width);
     margin: 0 auto;
     overflow-x: auto;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
 
 .categories-list {
+    max-width: var(--container-width);
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 
     margin-top: 0;
     padding-left: 0;

@@ -11,6 +11,7 @@ const Categories = () => {
             <ul className="categories-list">
                 {categories.map((category) => {
                     return <Category
+                        id={category.id}
                         title={category.title}
                         image={category.image}
                         items={category.items}
